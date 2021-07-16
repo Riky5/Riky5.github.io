@@ -13,7 +13,7 @@
     </head>
     
 	<body>
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-fluid">
             <img class="navbar-brand rounded-circle" id="profile-pic" src="Riky profile pic social network.jpeg" alt="profile picture">
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -39,58 +39,67 @@
         </nav>
 
         <header class="page-header header container-fluid">
-            <! <div class="overlay"></div> -->
-        </header>
+            <!-- <div class="overlay"></div> -->
+        
         <div class="description">
             <h1>Hello World!<br> My name is Riky.</h1>
             <p>&lt; A self-taught web developer &#47;&gt;</p>
             <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/ Bernie.JPG" class="img-fluid rounded mx-auto d-block Bernie" alt="drawing of a dog">
             <p>&lt; and artist. &#47;&gt;</p>
         </div>
-
-        <div class="container features" id="Projects">
-            <div class="row">
-                <h2>My Projects</h2>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <a class="caption" href="https://codepen.io/riky5/full/abmEYzP" target="_blank" role="button">
-                    <h3 class="feature-title">Technical Documentation Page</h3>
-                    <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/Sql language tech page.png" class="img-fluid">
-                    <p class="caption">&lt; SQL language. Built with Codepen. &#47;&gt;</p>
-                    </a>
+        </header>
+        <div class="container about-me">
+            <p>I am a tech enthusiast with experience leading teams and delivering excellent customer service in the hospitality and retail industries.
+                <br>
+                My interest in tech began when I listened to podcasts and took an Oracle certificate in 2014.
+                <br>
+                In my free time, I enjoy solving code challenges, attending coding meet-ups, and learning new programming languages and skills constantly. 
+                <br>
+                I can accomplish challenging tasks and meet deadlines through planning and time management.</p>
+        </div>
+        <div class="container-fluid features" id="Projects">
+            <h2>My Projects</h2>
+            <div id="carouselProjectIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <a href="https://codepen.io/riky5/full/abmEYzP" target="_blank" alt="Tech Doc Page link" class="project-tile">
+                                <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/Sql language tech page.png" class="d-block w-100" alt="Sql language tech page project photo and description">
+                            </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>&lt; Technical Documentation page &#47;&gt;</h5>
+                        </div>
+                    </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <a href="" target="_blank" alt="">
+                                <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/work in progress.png" class="d-block w-100" alt="...">
+                            </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>&lt; Work in progress &#47;&gt;</h5>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="" target="_blank" alt="">
+                                <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/work in progress.png" class="d-block w-100" alt="...">
+                            </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>&lt; Work in progress &#47;&gt;</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <a class="caption" href="#" role="button">
-                    <h3 class="feature-title">Project 2</h3>
-                    <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/work in progress.png" class="img-fluid">
-                    <p class="caption">&lt; Work in progress. &#47;&gt;</p>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <a class="caption" href="#" role="button">
-                    <h3 class="feature-title">Project 3</h3>
-                    <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/work in progress.png" class="img-fluid">
-                    <p class="caption">&lt; Work in progress. &#47;&gt;</p>
-                    </a>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <a class="caption" href="#" role="button">
-                    <h3 class="feature-title">Project 4</h3>
-                    <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/work in progress.png" class="img-fluid">
-                    <p class="caption">&lt; Work in progress. &#47;&gt;</p>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <a class="caption" href="#" role="button">
-                    <h3 class="feature-title">Project 5</h3>
-                    <img src="/Users/rikytraveller/Desktop/myWork/projects/Portfolio/Riky5.github.io/work in progress.png" class="img-fluid">
-                    <p class="caption">&lt; Work in progress. &#47;&gt;</p>
-                    </a>
-                </div>
-            </div>    
         </div>
         
         <div class="background" id="Skills">
@@ -139,6 +148,10 @@
 
                 </div>
             </div>
+        </div>
+
+        <!--add a hobby section-->
+        <div>
 
         </div>
 
@@ -161,17 +174,17 @@
                     </div>
                     
                     <div class="row justify-content-md-center">
-                        <div class="col-sm-3">
-                            <a href="https://www.freecodecamp.org/rikytraveller" target="_blank" class="btn btn-primary btn-block col-sm"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <div class="col-sm-1">
+                            <a href="https://www.freecodecamp.org/rikytraveller" target="_blank" class="btn btn-primary btn-block btn-lg col-sm"><i class="fab fa-linkedin"></i></a>
                         </div>
-                        <div class="col-sm-3">
-                            <a href="https://codepen.io/riky5" target="_blank" class="btn btn-primary btn-block col-sm"><i class="fab fa-codepen"></i> Codepen</a>
+                        <div class="col-sm-1">
+                            <a href="https://codepen.io/riky5" target="_blank" class="btn btn-primary btn-block btn-lg col-sm"><i class="fab fa-codepen"></i></a>
                         </div>
-                        <div class="col-sm-3">
-                            <a href="mailto:riky.moroni5@gmail.com" target="_blank" class="btn btn-primary btn-block col-sm"><i class="fas fa-at"></i> Email</a>
+                        <div class="col-sm-1">
+                            <a href="mailto:riky.moroni5@gmail.com" target="_blank" class="btn btn-primary btn-block btn-lg col-sm"><i class="fas fa-at"></i></a>
                         </div>
                         <div class="col-sm-auto">
-                            <a href="tel:+4475885268288" target="_blank" class="btn btn-primary btn-block col-sm"><i class="fas fa-mobile-alt"></i> Call</a>
+                            <a href="tel:+4475885268288" target="_blank" class="btn btn-primary btn-block btn-lg col-sm"><i class="fas fa-mobile-alt"></i></a>
                         </div>
                     </div>
 
