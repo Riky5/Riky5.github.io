@@ -13,16 +13,16 @@
     </head>
     
 	<body>
-        <nav class="navbar navbar-expand-md sticky-top">
+        <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container-fluid">
             <img class="navbar-brand rounded-circle" id="profile-pic" src="./images/Riky profile pic social network.jpeg" alt="profile picture">
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation"aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Projects">Projects</a>
@@ -38,9 +38,7 @@
             </div>
         </nav>
 
-        <header class="page-header header container-fluid">
-            <!-- <div class="overlay"></div> -->
-        
+        <header class="page-header header container-fluid">        
         <div class="description">
             <h1>Hello World!<br> I'm Riky Moroni.</h1>
             <p>&lt; A self-taught developer &#47;&gt;</p>
@@ -50,17 +48,18 @@
         </header>
         <div class="container-fluid about-me">
             <p>I am a tech enthusiast with experience leading teams
-            and delivering excellent customer service in the hospitality and retail industry.
+            and delivering excellent customer service in the hospitality industry.
             <br>
-            My interest in tech began when I met a Software Developer in New Zealand in 2012 
+            My interest in tech began when I met a Software Developer in New Zealand in 2012, 
             and took an Oracle certificate in 2014.
             <br>
             In my free time, I enjoy solving code challenges, attending coding meet-ups, 
             and learning new programming languages and skills constantly. 
-            <br>
-            I can accomplish challenging tasks and meet deadlines through planning and time management.</p>
+            </p>
         </div>
-        <div class="container features" id="Projects">
+    
+    <div id="Projects">
+        <div class="container features">
             <h2>&lt; My Projects &#47;&gt;</h2>
             <div id="carouselProjectIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -70,37 +69,38 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <a href="https://codepen.io/riky5/full/abmEYzP" target="_blank" alt="Tech Doc Page link" class="project-tile">
+                        <a href="https://codepen.io/riky5/full/abmEYzP" target="_blank" alt="Tech Doc Page link">
                             <img src="./images/Sql language tech page.png" class="d-block w-100" alt="Sql language tech page project picture">
                         </a>
+                        <h5>&lt; Technical Documentation Page &#47;&gt;</h5>
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
                         <a href="https://codepen.io/riky5/full/gOwPMxj" target="_blank" alt="travel form project picture">
                             <img src="./images/travel form project.png" class="d-block w-100" alt="travel form project picture">
                         </a>
+                        <h5>&lt; Travel Form &#47;&gt;</h5>
                     </div>
                     <div class="carousel-item">
                         <a href="" target="_blank" alt="">
                             <img src="./images/work in progress.png" class="d-block w-100" alt="work in progress picture">
                         </a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>&lt; Work in progress &#47;&gt;</h5>
-                        </div>
+                        <h5>&lt; Work in progress &#47;&gt;</h5>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
         
-        <div class="background" id="Skills">
-            <div class="container d-grid gap-3 tech">
+        <div id="Skills">
+            <div class="container-fluid d-grid gap-3 tech">
                 <h2>&lt; Tools and Tech &#47;&gt;</h2>
                 <div class="row g-4 justify-content-md-center">
                     <div class="col">
@@ -115,7 +115,7 @@
                             <h4 class="t-title">CSS3</h4>
                         </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col">
                         <div class="p-1">
                             <img class="img-thumbnail rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="Card image">
                             <h4 class="t-title">JavaScript</h4>
@@ -127,35 +127,30 @@
                             <h4 class="t-title">Bootstrap</h4>
                         </div>
                     </div>
-
                     <div class="col">
                         <div class="p-1">
                             <img class="img-thumbnail rounded-circle" src="data:image/png;base64,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" alt="Card image">
                             <h4 class="t-title">SQL</h4>
                         </div>
                     </div>
-
                     <div class="col">
                         <div class="p-1">
                             <img class="img-thumbnail rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamaXsk9WTX31EUsyX7jezbA_JT-vFGyn_r1LkntW2PcUvvNtxZt4lw7G3_isPxRaPivI&usqp=CAU" alt="Card image">
                             <h4 class="t-title">jQuery</h4>
                         </div>
                     </div>
-
-                    <div class="col-sm">
+                    <div class="col">
                         <div class="p-1">
                             <img class="img-thumbnail rounded-circle" src="https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png" alt="Card image">
                             <h4 class="t-title">React</h4>
                         </div>
                     </div>
-
                     <div class="col">
                         <div class="p-1">
                             <img class="img-thumbnail rounded-circle" src="https://www.tekkiwebsolutions.com/wp-content/uploads/visual-studio.jpg" alt="Card image">
                             <h4 class="t-title">VS Code</h4>
                         </div>
                     </div>
-
                     <div class="col">
                         <div class="p-1">
                             <img class="img-thumbnail rounded-circle" src="./images/git-github.jpg" alt="Card image">
@@ -167,11 +162,45 @@
             </div>
         </div>
 
-        <!--add a hobby section
+        <div id="Education">
+            <div class="container-fluid d-grid gap-3 edu">
+                <h2>&lt; Education &#47;&gt;</h2>
+                <div class="row g-4 justify-content-center mx-auto">
 
-        <div class="hobbies">
-            <h2>My hobbies</h2>
-        </div>-->
+                    <div class="col-sm">
+                        <div class="set-div" id="freecodecamp">
+                            <!--<img class="img-border" src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" alt="Card image">-->
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="set-div" id="codecademy">
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="set-div" id="codebar">
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="set-div" id="youtube">
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="set-div" id="MDN">
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="set-div" id="w3schools">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <footer class="page-footer">
             <div class="container-fluid d-grid gap-3" id="contact">
